@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'San Francisco';
+  src: url("../fonts/SFUIText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Medium';
+  src: url("../fonts/SFUIText-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Light';
+  src: url("../fonts/SFUIText-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  padding: 18px 23px;
+  background-color: #0071E3;
+  font-size: 20px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-family: 'San Francisco';
+}
+
+.header {
+  padding: 30px 0px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__link {
+  padding: 0 25px;
+  font-family: 'San Francisco';
+  font-size: 20px;
+}
+
+.navbar__link:last-child {
+  margin-right: 55px;
+}
+
+.navbar__link:nth-child(2) {
+  border-right: 1px solid #C9C9C9;
+  border-left: 1px solid #C9C9C9;
+}
+
+.navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  padding: 100px 0;
+}
+
+.hero {
+  padding-bottom: 70px;
+  text-align: center;
+  font-family: 'San Francisco Medium';
+}
+
+.hero__subtitle {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+  font-size: 34px;
+}
+
+.hero__cost {
+  display: block;
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-family: 'San Francisco Light';
+}
+
+.hero__btn {
+  margin-bottom: 88px;
+}
+/*# sourceMappingURL=style.css.map */

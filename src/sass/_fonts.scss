@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('../fonts/SFUIText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'San Francisco Medium';
+    src: url('../fonts/SFUIText-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'San Francisco Light';
+    src: url('../fonts/SFUIText-Light.woff') format('woff');
+		font-weight: normal;
+    font-style: normal;
+    }
+
+@mixin normal {
+	font-family: 'San Francisco';
+}
+@mixin medium {
+	font-family: 'San Francisco Medium';
+}
+@mixin light {
+	font-family: 'San Francisco Light';
+}
