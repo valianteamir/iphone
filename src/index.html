@@ -78,44 +78,74 @@
 				<h2 class="order__main-title">Оформить предзаказ</h2>
 				<form action="#" class="order__form">
 					<div class="order__wrapper">
-						<div class="order__item">
-							<h3 class="order__title">Персональные данные</h3>
-							<label for="name">ФИО</label>
-							<input type="text" id="name">
-							<label for="phone">Телефон</label>
-							<input type="tel" id="phone">
-							<label for="email">E-mail</label>
-							<input type="email" id="email">
-						</div>
-						<div class="order__item">
-							<h3 class="order__title">Адрес доставки</h3>
-							<label for="city">Город</label><input type="text" id="city"><label for="index">Индекс</label><input
-								type="text" id="index"><label for="address">Адрес</label><input type="text" id="index">
-						</div>
-						<div class="order__item">
-							<h3 class="order__title">Выбор модели</h3>
-							<label for="model"></label>
-							<select name="model" id="model">
-								<option value="1">iPhone 13</option>
-								<option value="2">iPhone 13 mini</option>
-								<option value="3">iPhone 13 Pro</option>
-								<option value="4">iPhone 13 Pro Max</option>
-							</select>
-							<label for="color"></label>
-							<select name="color" id="color">
-								<option value="1">White</option>
-								<option value="2">Blue</option>
-								<option value="3">Green</option>
-							</select>
-						</div>
-						<div class="order__item">
-							<h3 class="order__title">Аксессуары</h3>
-							<input type="checkbox" id="case"><label for="case">Чехол</label><input type="checkbox"
-								id="headphones"><label for="headphones">Наушники AirPods 3</label><input type="checkbox"
-								id="glass"><label for="glass">Защитное стекло</label><input type="checkbox" id="magsafe"><label
-								for="magsafe">Зарядное
-								устройство MagSafe</label>
-						</div>
+						<fieldset class="order__item">
+							<legend class="order__title">Персональные данные</legend>
+							<div class="order__input">
+								<label for="name">ФИО</label>
+								<input type="text" id="name">
+							</div>
+							<div class="order__input">
+								<label for="phone">Телефон</label>
+								<input type="tel" id="phone">
+							</div>
+							<div class="order__input">
+								<label for="email">E-mail</label>
+								<input type="email" id="email">
+							</div>
+						</fieldset>
+						<fieldset class="order__item">
+							<legend class="order__title">Адрес доставки</legend>
+							<div class="order__input">
+								<label for="city">Город</label>
+								<input type="text" id="city">
+							</div>
+							<div class="order__input">
+								<label for="index">Индекс</label>
+								<input type="text" id="index">
+							</div>
+							<div class="order__input">
+								<label for="address">Адрес</label>
+								<input type="text" id="address">
+							</div>
+						</fieldset>
+						<fieldset class="order__item">
+							<legend class="order__title">Выбор модели</legend>
+							<div class="order__input">
+								<label for="model">Модель</label>
+								<div class="select__wrapper">
+									<select name="model" id="model">
+										<option value="0" disabled selected></option>
+										<option value="1">iPhone 13</option>
+										<option value="2">iPhone 13 mini</option>
+										<option value="3">iPhone 13 Pro</option>
+										<option value="4">iPhone 13 Pro Max</option>
+									</select>
+								</div>
+							</div>
+							<div class="order__input">
+								<label for="color">Цвет</label>
+								<div class="select__wrapper">
+									<select name="color" id="color">
+										<option value="0" disabled selected></option>
+										<option value="1">White</option>
+										<option value="2">Blue</option>
+										<option value="3">Green</option>
+									</select>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset class="order__item">
+							<legend class="order__title">Аксессуары</legend>
+							<div class="label__wrap"> <input type="checkbox" id="case">
+								<label for="case">Чехол</label></div>
+							<div class="label__wrap"> <input type="checkbox" id="headphones">
+								<label for="headphones">Наушники AirPods 3</label></div>
+							<div class="label__wrap"> <input type="checkbox" id="glass">
+								<label for="glass">Защитное стекло</label></div>
+							<div class="label__wrap">
+								<input type="checkbox" id="magsafe">
+								<label for="magsafe">Зарядное устройство MagSafe</label></div>
+						</fieldset>
 					</div>
 					<button class="order__button button" type="submit">Оформить</button>
 				</form>
